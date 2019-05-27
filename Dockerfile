@@ -1,5 +1,6 @@
 FROM node:8
 WORKDIR /api
+COPY package.json /api
 RUN npm install -g nodemon
 RUN npm install
 ADD . /api
